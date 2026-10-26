@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Meld fra om noe som kan gå galt, også når du er usikker. Ikke sett Assignees selv. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+        Meld fra om noe som kan gå galt, også når du er usikker. Er saken et innspill, ikke sett Assignees. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
   - type: textarea
     id: risikoen
     attributes:

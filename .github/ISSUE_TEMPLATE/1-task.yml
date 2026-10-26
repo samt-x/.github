@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Saken behandles av dem som har ansvar for repoet. Ikke sett Assignees selv. Bruk feltet nederst hvis du vil foreslå hvem som bør se på saken. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+        Er oppgaven et innspill som ikke er behandlet, ikke sett Assignees. Bruk heller feltet nederst til å foreslå hvem som bør se på den. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
   - type: textarea
     id: beskrivelse
     attributes:

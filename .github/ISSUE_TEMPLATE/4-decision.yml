@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Beskriv hva som skal besluttes og hvem som beslutter. Beslutningen skrives i en kommentar før saken lukkes. Ikke sett Assignees selv. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+        Beskriv hva som skal besluttes og hvem som beslutter. Beslutningen skrives i en kommentar før saken lukkes. Er saken et innspill, ikke sett Assignees. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
   - type: textarea
     id: hva
     attributes:
