@@ -1,0 +1,70 @@
+name: Problem – noe er feil eller virker ikke
+description: Noe er galt nå, i verktøy, innhold, modeller, resonnementer eller måten vi jobber på
+type: Problem
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Et problem er noe som er galt **nå**: et verktøy som ikke virker, en feil i en tekst eller en modell, et resonnement som ikke holder. Gjelder det noe som **kan** gå galt, bruk Risk i stedet. Er saken et innspill, ikke sett Assignees. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: problemet
+    attributes:
+      label: Hva er problemet?
+    validations:
+      required: true
+  - type: dropdown
+    id: art
+    attributes:
+      label: Hva slags problem?
+      options:
+        - Programvare eller verktøy virker ikke
+        - Feil eller mangel i innhold (tekst, side, dokument)
+        - Feil i en modell (Archi, informasjonsmodell, begrep)
+        - Svakhet i et resonnement, en vurdering eller en beslutning
+        - Motsetning eller uklarhet mellom kilder, dokumenter eller beslutninger
+        - Måten vi jobber eller samarbeider på
+        - Annet (beskriv under)
+    validations:
+      required: true
+  - type: input
+    id: annen-art
+    attributes:
+      label: Annen type, eller forslag til nytt valg i lista
+      description: Passer ingen av valgene, beskriv hva slags problem det er. Forslag til nye valg tas inn i lista ved behov.
+    validations:
+      required: false
+  - type: textarea
+    id: konsekvens
+    attributes:
+      label: Hvorfor er det et problem? Hva får det å si?
+    validations:
+      required: false
+  - type: textarea
+    id: vise
+    attributes:
+      label: Slik ser du problemet
+      description: Steg for steg, et sitat, en lenke eller et skjermbilde. Skjermbilder kan limes inn her.
+    validations:
+      required: false
+  - type: textarea
+    id: losning
+    attributes:
+      label: Forslag til løsning
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven, beslutningen eller elementet i Archi som problemet gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false
