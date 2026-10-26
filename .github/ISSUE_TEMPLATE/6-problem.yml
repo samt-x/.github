@@ -17,6 +17,7 @@ body:
     attributes:
       label: Hva slags problem?
       options:
+        - Vet ikke
         - Programvare eller verktøy virker ikke
         - Feil eller mangel i innhold (tekst, side, dokument)
         - Feil i en modell (Archi, informasjonsmodell, begrep)
