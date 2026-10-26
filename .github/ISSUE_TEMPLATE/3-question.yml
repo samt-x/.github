@@ -1,0 +1,44 @@
+name: Question – spørsmål
+description: Noe som trenger et svar
+type: Question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Still spørsmålet så konkret du kan. Ikke sett Assignees selv. Bruk feltet nederst hvis du vet hvem som kan svare. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: sporsmalet
+    attributes:
+      label: Spørsmålet
+    validations:
+      required: true
+  - type: textarea
+    id: bakgrunn
+    attributes:
+      label: Bakgrunn
+      description: Hvorfor trenger du svaret, og hva har du allerede funnet ut?
+    validations:
+      required: false
+  - type: input
+    id: frist
+    attributes:
+      label: Svar trengs innen
+      placeholder: f.eks. 2026-11-15, eller før neste møte i arkitekturgruppa
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som spørsmålet gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false

@@ -1,0 +1,38 @@
+name: Task – oppgave
+description: Noe som skal gjøres, også oppfølging, utforsking og utredning
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Saken behandles av dem som har ansvar for repoet. Ikke sett Assignees selv. Bruk feltet nederst hvis du vil foreslå hvem som bør se på saken. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Hva skal gjøres?
+      description: Beskriv oppgaven og hvorfor den trengs.
+    validations:
+      required: true
+  - type: textarea
+    id: ferdig-naar
+    attributes:
+      label: Ferdig når
+      description: Hva må være på plass for at oppgaven kan lukkes?
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som saken gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false

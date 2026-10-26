@@ -1,0 +1,51 @@
+name: Decision – beslutning
+description: Noe som krever en beslutning. Si hva og av hvem.
+type: Decision
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Beskriv hva som skal besluttes og hvem som beslutter. Beslutningen skrives i en kommentar før saken lukkes. Ikke sett Assignees selv. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: hva
+    attributes:
+      label: Hva skal besluttes?
+    validations:
+      required: true
+  - type: input
+    id: hvem-beslutter
+    attributes:
+      label: Hvem beslutter?
+      description: En person, en gruppe eller et forum, f.eks. arkitekturgruppa eller prosjektledelsen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternativer
+    attributes:
+      label: Alternativer
+      description: Hvilke valg finnes, og hva taler for og imot? Lenk gjerne til løsningsforslag.
+    validations:
+      required: false
+  - type: input
+    id: frist
+    attributes:
+      label: Beslutning trengs innen
+      placeholder: f.eks. 2026-11-15
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som beslutningen gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false

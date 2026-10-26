@@ -1,0 +1,47 @@
+name: Bug – feil
+description: Noe virker ikke som det skal, i plattformer og verktøy
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gjelder feil i plattformer og verktøy, f.eks. docs.samt-bu.no eller brettene. Feil i innholdet på en side meldes som Task. Ikke sett Assignees selv. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: hva-skjedde
+    attributes:
+      label: Hva skjedde?
+    validations:
+      required: true
+  - type: textarea
+    id: forventet
+    attributes:
+      label: Hva forventet du?
+    validations:
+      required: false
+  - type: textarea
+    id: gjenskape
+    attributes:
+      label: Slik får du feilen fram
+      description: Steg for steg. Skjermbilder kan limes inn her.
+      placeholder: |
+        1. Gå til ...
+        2. Klikk på ...
+        3. Se feilen
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden eller verktøyet der feilen skjer.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false

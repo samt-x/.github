@@ -1,0 +1,38 @@
+name: Solution proposal – løsningsforslag
+description: Et løsningsforslag som skal vurderes, som regel sammen med andre forslag
+type: Solution proposal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Et løsningsforslag blir vurdert, ofte sammen med andre forslag under en større oppgave. Ikke sett Assignees selv. Bruk feltet nederst hvis du vil foreslå hvem som bør se på forslaget. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: forslaget
+    attributes:
+      label: Forslaget
+      description: Hva foreslår du, og hvilket problem løser det?
+    validations:
+      required: true
+  - type: textarea
+    id: begrunnelse
+    attributes:
+      label: Begrunnelse og konsekvenser
+      description: Hvorfor er dette en god løsning? Hva koster den, og hva påvirker den?
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som forslaget gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false

@@ -1,0 +1,54 @@
+name: Risk – risiko
+description: En risiko eller bekymring som bør vurderes
+type: Risk
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Meld fra om noe som kan gå galt, også når du er usikker. Ikke sett Assignees selv. Se [Konvensjoner](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/).
+  - type: textarea
+    id: risikoen
+    attributes:
+      label: Hva kan gå galt?
+    validations:
+      required: true
+  - type: textarea
+    id: konsekvens
+    attributes:
+      label: Hva skjer hvis det inntreffer?
+    validations:
+      required: false
+  - type: dropdown
+    id: sannsynlighet
+    attributes:
+      label: Hvor sannsynlig er det?
+      options:
+        - Vet ikke
+        - Lav
+        - Middels
+        - Høy
+      default: 0
+    validations:
+      required: false
+  - type: textarea
+    id: tiltak
+    attributes:
+      label: Forslag til tiltak
+    validations:
+      required: false
+  - type: input
+    id: gjelder
+    attributes:
+      label: Gjelder
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som risikoen gjelder.
+      placeholder: https://docs.samt-bu.no/...
+    validations:
+      required: false
+  - type: input
+    id: forslag-hvem
+    attributes:
+      label: Forslag til hvem som bør se på dette
+      description: Skriv @brukernavn. De får et varsel og kan følge saken, uten å bli tildelt den.
+      placeholder: "@brukernavn"
+    validations:
+      required: false
