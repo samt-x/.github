@@ -10,7 +10,7 @@ body:
     id: beskrivelse
     attributes:
       label: Hva skal gjøres?
-      description: Beskriv oppgaven og hvorfor den trengs.
+      description: Kort om hva som skal gjøres og hvorfor. Planer, beskrivelser og resultater skrives på docs og lenkes i «Gjelder» ([én master per opplysning](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/konvensjoner/#oppgaven-p%C3%A5-github-innholdet-p%C3%A5-docs)).
     validations:
       required: true
   - type: textarea
@@ -24,7 +24,7 @@ body:
     id: gjelder
     attributes:
       label: Gjelder
-      description: Lenke til siden, caset, oppgaven eller elementet i Archi som saken gjelder.
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som saken gjelder. Planer, beskrivelser og resultater hører hjemme på docs-siden, ikke i issuet.
       placeholder: https://docs.samt-bu.no/...
     validations:
       required: false

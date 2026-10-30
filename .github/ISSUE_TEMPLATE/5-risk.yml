@@ -40,7 +40,7 @@ body:
     id: gjelder
     attributes:
       label: Gjelder
-      description: Lenke til siden, caset, oppgaven eller elementet i Archi som risikoen gjelder.
+      description: Lenke til siden, caset, oppgaven eller elementet i Archi som risikoen gjelder. Planer, beskrivelser og resultater hører hjemme på docs-siden, ikke i issuet.
       placeholder: https://docs.samt-bu.no/...
     validations:
       required: false
