@@ -20,6 +20,14 @@ body:
       description: Hva må være på plass for at oppgaven kan lukkes?
     validations:
       required: false
+  - type: textarea
+    id: avhengigheter
+    attributes:
+      label: Avhengigheter
+      description: Venter oppgaven på andre oppgaver? Koble dem med «Mark as blocked by» under Relationships i høyremargen etter at saken er laget. Skriv her én linje per oppgave om hvorfor. Teksten vises på pila i [tidslinjen](https://docs.samt-bu.no/prosjektleveranser/loesninger/samhandlingsplattform/oppgavestyring/tidslinje/).
+      placeholder: "- #35: trenger juridisk avklaring av samtykke"
+    validations:
+      required: false
   - type: input
     id: gjelder
     attributes:
